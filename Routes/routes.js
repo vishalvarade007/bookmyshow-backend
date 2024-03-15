@@ -25,7 +25,7 @@ router.post("/booking",async (req,res)=>{
         console.log(err);
     }
     if(!data){
-        res.status(500).send("Unable to add data");
+        res.status(500).send("Unable to add data !!!");
     }else {
         booking.find().then((result)=>res.status(200).send(result[result.length - 1]));
     }
@@ -34,7 +34,7 @@ router.post("/booking",async (req,res)=>{
 router.delete("/booking",async (req,res)=>{
     try{
         await booking.deleteMany();
-        res.send("deleted..");
+        res.send("deleted....");
     }catch(err){
          res.status(500).send(err.message);
     }
