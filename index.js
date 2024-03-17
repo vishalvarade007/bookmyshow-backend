@@ -4,7 +4,9 @@ mongoose.set("strictQuery",false);
 const cors = require("cors");
 const app = express();
 const router = require("./Routes/routes");
-const uri = "mongodb://127.0.0.1:27017";
+const uri = "mongodb+srv://user2002:vishal2002@cluster0.hty7hh9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
+
 const port = process.env.PORT || 8080;
 
 //middlewares:
